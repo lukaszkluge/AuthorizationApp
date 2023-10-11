@@ -29,6 +29,11 @@ namespace AuthorizationApp.Services
             };
 
             _users.Add(user);
+
+            // Generujemy token JWT
+            var token = GenerateJwtToken(user.Id);
+
+            return token;
         }
     }
 }
