@@ -33,7 +33,7 @@ namespace AuthorizationApp.Services
             // Generujemy token JWT
             var token = GenerateJwtToken(user.Id);
 
-            return token;
+            return token; // zwracamy token JWT
         }
 
         private string GenerateJwtToken(int userId) 
